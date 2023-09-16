@@ -1,0 +1,42 @@
+import numpy as np
+import pandas as pd
+### Question 1
+What's the version of Pandas that you installed?
+pd.__version__
+### Question 2
+How many columns are in the dataset?
+df = pd.read_csv('housing.csv')
+df.shape
+df
+### Question 3
+Which columns in the dataset have missing values?
+df.isnull().sum()
+### Question 4
+How many unique values does the ocean_proximity column have?
+df.ocean_proximity.nunique()
+### Question 5
+What's the average value of the median_house_value for the houses located near the bay?}
+df[df['ocean_proximity'] == 'NEAR BAY']['median_house_value'].mean()
+### Question 6
+Calculate the average of total_bedrooms column in the dataset.  
+Use the fillna method to fill the missing values in total_bedrooms with the mean value from the previous step.  
+Now, calculate the average of total_bedrooms again.  
+Has it changed?
+df['total_bedrooms'].mean()
+df['total_bedrooms'].fillna(537.8705525375618).mean()
+### Question 7
+Select all the options located on islands.  
+Select only columns housing_median_age, total_rooms, total_bedrooms.  
+Get the underlying NumPy array. Let's call it X.  
+Compute matrix-matrix multiplication between the transpose of X and X. To get the transpose, use X.T. Let's call the result XTX.  
+Compute the inverse of XTX.  
+Create an array y with values [950, 1300, 800, 1000, 1300].  
+Multiply the inverse of XTX with the transpose of X, and then multiply the result by y. Call the result w.  
+What's the value of the last element of w?
+X = df[(df['ocean_proximity'] == 'ISLAND')][['housing_median_age', 'total_rooms','total_bedrooms']].values
+X
+XTX = X.T.dot(X)
+inverse = np.linalg.inv(XTX)
+y = np.array([950, 1300, 800, 1000, 1300])
+w = (inverse.dot(X.T)).dot(y)
+w
