@@ -23,7 +23,7 @@ File `notebook.ipynb` contains the end to end process of building and deploying 
 8. Dependency and environment manager
 9. Containerization
 
-## Instructions on how to run de project
+# Instructions on how to run de project
 The process of contructing this project is portrayed in the notebook.ipynb file. This section instructs how to used the deployed solution.
 In order to run this project in your local machine, download the contents of this repository.   
 Install docker on your local machine if you don't have it.  
