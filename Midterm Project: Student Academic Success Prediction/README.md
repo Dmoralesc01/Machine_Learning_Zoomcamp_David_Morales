@@ -28,4 +28,5 @@ The process of contructing this project is portrayed in the notebook.ipynb file.
 In order to run this project in your local machine, download the contents of this repository.   
 Install docker on your local machine if you don't have it.  
 Run `docker run -it --rm -p 9696:9696 midterm-project` on the terminal.  
-Once the container is running, open a new terminar window and run `python predict_test.py`  
+Once the container is running, open a new terminar window and run `python predict_test.py`    
+Go to the `Video - Web Service Deployed` file in this folder and download the mp4 video to see the deployed model in action.
