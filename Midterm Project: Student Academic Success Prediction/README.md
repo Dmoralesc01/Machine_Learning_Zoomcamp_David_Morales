@@ -11,8 +11,21 @@ The development of this dataset has been made possible through the support of th
 ### Classification Task and Data Splits
 The fundamental challenge posed by this dataset is formulated as a three-category classification task, where the classes are characterized as 'dropout,' 'enrolled,' and 'graduate' status at the conclusion of the regular duration of the course.
 
+# Project notebook
+File `notebook.ipynb` contains the end to end process of building and deploying this project. The file is divided into the following subsections:
+1. Libraries
+2. Load the data
+3. Data preparation and cleaning
+4. Exploratory Data Analysis (ETA) and feature importance analysis
+5. Model Training and Parameter Tuning
+6. Model Selection
+7. Deploying the model
+8. Dependency and environment manager
+9. Containerization
+
 ## Instructions on how to run de project
-In order to run this project in your local machine, download the contents of this repository. 
-Install docker on your local machine if you don't have it.
-Run `docker run -it --rm -p 9696:9696 midterm-project` on the terminal.
-Once the container is running, open a new terminar window and run `python predict_test.py`
+The process of contructing this project is portrayed in the notebook.ipynb file. This section instructs how to used the deployed solution.
+In order to run this project in your local machine, download the contents of this repository.   
+Install docker on your local machine if you don't have it.  
+Run `docker run -it --rm -p 9696:9696 midterm-project` on the terminal.  
+Once the container is running, open a new terminar window and run `python predict_test.py`  
