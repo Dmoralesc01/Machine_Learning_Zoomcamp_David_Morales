@@ -12,7 +12,7 @@ The development of this dataset has been made possible through the support of th
 The fundamental challenge posed by this dataset is formulated as a three-category classification task, where the classes are characterized as 'dropout,' 'enrolled,' and 'graduate' status at the conclusion of the regular duration of the course.
 
 # Project notebook
-File `notebook.ipynb` contains the end to end process of building and deploying this project. The file is divided into the following subsections:
+File [notebook.ipynb](https://github.com/Dmoralesc01/Machine_Learning_Zoomcamp_David_Morales/blob/083966fef509553de6390f11f93a6a5929653836/Midterm%20Project%3A%20Student%20Academic%20Success%20Prediction/notebook.ipynb) contains the end to end process of building and deploying this project. The file is divided into the following subsections:
 1. Libraries
 2. Load the data
 3. Data preparation and cleaning
